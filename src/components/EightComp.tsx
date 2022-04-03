@@ -30,8 +30,10 @@ const EightComp = () => {
                     <strong>Masters in Geology</strong>{" "}
                   </p>
 
-                  <AiTwotoneCalendar />
-                  <span> 28th April 2021</span>
+                  <div className="april">
+                    <AiTwotoneCalendar />
+                    <span> 28th April 2021</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -45,8 +47,10 @@ const EightComp = () => {
                   Doctor appointments have the <br /> diagnose
                 </p>
 
-                <AiTwotoneCalendar />
-                <span> 28th April 2021</span>
+                <div className="april">
+                  <AiTwotoneCalendar />
+                  <span> 28th April 2021</span>
+                </div>
               </div>
             </div>
           </div>
@@ -59,9 +63,10 @@ const EightComp = () => {
                   {" "}
                   Doctor appointments have the <br /> diagnose
                 </p>
-                <p className="font3">
-                  <i className="fa fa-calendar"></i> 28th April 2021
-                </p>
+                <div className="april">
+                  <AiTwotoneCalendar />
+                  <span> 28th April 2021</span>
+                </div>
               </div>
             </div>
           </div>
@@ -159,8 +164,14 @@ const Eighth = styled.div`
                 color: #ffffff;
                 border: none;
               }
-              .font {
+              .april {
+                display: flex;
+                align-items: center;
                 font-size: 0.9rem;
+
+                span {
+                  margin-left: 3%;
+                }
               }
             }
           }
@@ -212,8 +223,13 @@ const Eighth = styled.div`
               color: #ffffff;
               border: none;
             }
-            .font {
+            .april {
+              display: flex;
+              align-items: center;
               font-size: 0.9rem;
+              span {
+                margin-left: 3%;
+              }
             }
           }
         }
@@ -258,8 +274,13 @@ const Eighth = styled.div`
               color: #ffffff;
               border: none;
             }
-            .font3 {
+            .april {
+              display: flex;
+              align-items: center;
               font-size: 0.9rem;
+              span {
+                margin-left: 3%;
+              }
             }
           }
         }

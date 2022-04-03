@@ -78,6 +78,7 @@ const Sixth = styled.div`
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+
       position: relative;
       @media (width: 768px) {
         max-width: 100%;
@@ -85,7 +86,7 @@ const Sixth = styled.div`
       }
       @media (width: 400px) {
         /* max-width: 100%; */
-        height: 15rem;
+        height: 3rem;
         background-color: red;
       }
 

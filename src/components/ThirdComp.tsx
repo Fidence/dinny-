@@ -85,8 +85,8 @@ const Third = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    z-index: 1;
-    padding-bottom: 2%;
+    /* z-index: 1; */
+    padding-bottom: 3%;
 
     .color {
       position: absolute;
@@ -139,6 +139,7 @@ const Third = styled.div`
     grid-template-columns: 1fr 1fr;
     opacity: 0.89;
     color: #ffffff;
+
     @media (max-width: 1024px) {
       gap: 0.5rem;
     }
@@ -157,11 +158,11 @@ const Third = styled.div`
       width: 545px;
       height: 150px;
       background-color: #f2f2f2;
-      /*   */
       padding: 20px 20px;
       border-radius: 5px;
       opacity: 0.95;
       z-index: -1;
+      /* margin-left: 16%; */
 
       .img {
         padding-right: 20px;
@@ -219,6 +220,7 @@ const Third = styled.div`
         width: 300px;
         height: 170px;
         padding: 20px 20px;
+        margin-right: 2rem;
       }
     }
 
@@ -286,7 +288,7 @@ const Third = styled.div`
         padding: 10px 10px;
         width: 300px;
         height: 170px;
-        margin-left: 0;
+        margin-right: 0;
       }
     }
   }

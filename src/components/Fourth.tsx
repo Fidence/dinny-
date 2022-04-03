@@ -95,6 +95,8 @@ const Forth = styled.div`
       }
 
       ul li {
+        display: flex;
+        align-items: center;
         list-style: none;
         color: #6c757d;
         overflow: hidden;
@@ -138,7 +140,7 @@ const Forth = styled.div`
         position: absolute;
         background: rgba(0, 52, 1, 0.9);
         width: 100%;
-        height: 76%;
+        height: 98.8%;
         opacity: 0.5;
         border-bottom-left-radius: 40px;
         @media (max-width: 768px) {
@@ -161,8 +163,8 @@ const Forth = styled.div`
 
       .img1 {
         position: absolute;
-        left: -4%;
-        top: 43%;
+        left: -5%;
+        top: 55%;
         transform: rotate(-28.43deg);
         @media (max-width: 768px) {
           display: none;

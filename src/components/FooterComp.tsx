@@ -51,7 +51,9 @@ const FooterComp = () => {
             </p>
             <div className="Nletter">
               <input type="email" placeholder="Enter Email address" />
-              <FaMousePointer className="mouse" />
+              <span className="mouse">
+                <FaMousePointer />
+              </span>
             </div>
             <div className="socials">
               <div>
@@ -109,7 +111,7 @@ const Footer = styled.footer`
         grid-template-columns: repeat(2, 1fr);
         margin: 8% auto;
         padding: 4%;
-        gap: 2rem;
+        gap: 6rem;
       }
       @media (max-width: 400px) {
         display: grid;
@@ -173,24 +175,30 @@ const Footer = styled.footer`
           padding-bottom: 5%;
         }
         .Nletter {
-          width: 80%;
+          display: flex;
+          align-items: center;
+          width: 100%;
           height: 2.5rem;
           input {
-            width: 100%;
-            height: 100%;
+            padding: 5% 10%;
           }
           input::placeholder {
             color: #038c33;
-            padding-left: 2%;
           }
           input:focus {
             outline: none;
           }
           .mouse {
             font-size: 19px;
-            padding: 6% 9%;
+            padding: 1.5% 4%;
             color: #ffffff;
             background-color: #038c33;
+            @media (max-width: 768px) {
+              padding: 1% 5%;
+            }
+            @media (max-width: 400px) {
+              padding: 4% 3%;
+            }
           }
         }
 
@@ -204,22 +212,23 @@ const Footer = styled.footer`
 
     .align {
       margin-top: 1%;
+      /* height: 0.5rem; */
       color: #f2f2f2;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       align-self: end;
       @media (max-width: 400px) {
         font-size: 0.9rem;
       }
     }
     .socials {
-      padding-top: 7%;
+      padding-top: 15%;
       display: flex;
       @media (max-width: 768px) {
         margin-top: 6%;
       }
       @media (max-width: 400px) {
-        margin-top: 6%;
+        margin-top: 2%;
       }
       .space {
         margin-left: 6%;
@@ -229,7 +238,7 @@ const Footer = styled.footer`
 
     .underline {
       border-bottom: 1px solid #777777;
-      width: 69.9rem;
+      width: 79rem;
       margin: 0 auto;
       margin-top: 8%;
       @media (max-width: 1024px) {
