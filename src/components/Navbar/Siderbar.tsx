@@ -71,7 +71,7 @@ const Sidebar = styled.div`
       top: 90%;
       display: flex;
       flex-direction: column;
-      width: 30%;
+      width: 100%;
       height: 60vh;
       background-color: #003412;
 
@@ -86,9 +86,9 @@ const Sidebar = styled.div`
 
       a {
         color: #ffffff;
-        margin-top: 11%;
+        margin-top: 7%;
         margin-left: 15%;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         text-decoration: none;
 
         &:hover {

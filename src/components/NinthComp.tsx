@@ -27,14 +27,11 @@ const NinthComp = () => {
               placeholder="Message"
             ></textarea>
             <br />
-            <br />
-            <br />
+            <button>
+              <a href="">Send now</a>
+            </button>
           </form>
         </div>
-
-        <button>
-          <a href="">Send now</a>
-        </button>
       </div>
     </Ninth>
   );
@@ -44,16 +41,23 @@ export default NinthComp;
 
 const Ninth = styled.div`
   .contact {
-    margin-top: 6%;
+    margin-top: 3%;
     justify-content: center;
     /* width: 100%; */
     background-color: #ffffff;
+    @media (width: 768px) {
+      margin-top: 5%;
+    }
     h1 {
       text-align: center;
       color: #038c33;
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       font-weight: bold;
       padding-bottom: 5%;
+      margin: 10% 0;
+      @media (max-width: 400px) {
+        font-size: 2.4rem;
+      }
     }
     &_form {
       /* width: 67%; */
@@ -80,25 +84,26 @@ const Ninth = styled.div`
           display: block;
           width: 90%;
           height: 9rem;
-
           margin: 0 auto;
           border-radius: 3px;
           border: 1.4px solid #c4c4c4;
         }
-      }
-    }
-
-    button {
-      margin-top: 2%;
-      display: block;
-      margin: 0 auto;
-      background-color: #038c33;
-      color: #ffffff;
-      padding: 1% 3%;
-      border: none;
-      border-radius: 5px;
-      @media (width: 400px) {
-        margin-top: 0.5%;
+        button {
+          margin-top: 0%;
+          display: block;
+          margin: 0 auto;
+          background-color: #038c33;
+          color: #ffffff;
+          padding: 1% 3%;
+          border: none;
+          border-radius: 5px;
+          @media (max-width: 768px) {
+            padding: 2% 6%;
+          }
+          @media (max-width: 400px) {
+            padding: 3% 7%;
+          }
+        }
       }
     }
 

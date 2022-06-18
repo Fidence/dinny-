@@ -12,7 +12,7 @@ const RouterComp = () => {
 
         <div className="main-app">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="*" element={<HomePage />} />
           </Routes>
         </div>
         <FooterComp />

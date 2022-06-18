@@ -30,7 +30,7 @@ const ThirdComp = () => {
             </div>
           </div>
 
-          <div className="displayflx2">
+          <div className="displayflx1">
             <div className="img">
               <img src={Circle} alt="" />
             </div>
@@ -42,9 +42,7 @@ const ThirdComp = () => {
               </p>
             </div>
           </div>
-        </div>
-        {/*  */}
-        <div className="displayflx">
+          {/*  */}
           <div className="displayflx1">
             <div className="img">
               <img src={Circle} alt="" />
@@ -58,7 +56,7 @@ const ThirdComp = () => {
             </div>
           </div>
 
-          <div className="displayflx2">
+          <div className="displayflx1">
             <div className="img">
               <img src={Circle} alt="" />
             </div>
@@ -71,6 +69,8 @@ const ThirdComp = () => {
             </div>
           </div>
         </div>
+
+        <div className="displayflx"></div>
       </div>
     </Third>
   );
@@ -136,25 +136,31 @@ const Third = styled.div`
   .displayflx {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     opacity: 0.89;
     color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
 
-    @media (max-width: 1024px) {
-      gap: 0.5rem;
-    }
-    @media (max-width: 768px) {
-      gap: 0.5rem;
+    /* @media (max-width: 1024px) {
+  
+    } */
+    @media (max-width: 960px) {
+      gap: 1rem;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      margin: 0 17%;
+    }
+    @media (max-width: 768px) {
+      gap: 1rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
     @media (max-width: 400px) {
-      margin: 0 8%;
     }
-
     .displayflx1 {
       display: flex;
+      align-items: center;
       width: 545px;
       height: 150px;
       background-color: #f2f2f2;
@@ -162,13 +168,12 @@ const Third = styled.div`
       border-radius: 5px;
       opacity: 0.95;
       z-index: -1;
-      /* margin-left: 16%; */
-
-      .img {
-        padding-right: 20px;
+      gap: 1rem;
+      / .img {
+        margin-right: 30px;
         @media (max-width: 768px) {
-          padding-top: 2%;
-          padding-left: 0.3%;
+          /* /* padding-top: 2%;
+          padding-left: 0.3%; */
         }
         @media (max-width: 400px) {
           padding-top: 6%;
@@ -191,6 +196,7 @@ const Third = styled.div`
         p {
           padding-top: 5px;
           color: #1f6036;
+          line-height: 1.4;
           @media (max-width: 768px) {
             font-size: 1.3rem;
             padding-top: 3%;
@@ -210,21 +216,23 @@ const Third = styled.div`
     }
     @media (max-width: 768px) {
       .displayflx1 {
-        width: 500px;
+        width: 600px;
         height: 180px;
         padding: 20px 20px;
+        /* margin: 0 auto; */
       }
     }
     @media (max-width: 400px) {
       .displayflx1 {
         width: 300px;
         height: 170px;
-        padding: 20px 20px;
-        margin-right: 2rem;
+
+        /* padding: 20px 20px;
+        margin-right: 2rem; */
       }
     }
 
-    .displayflx2 {
+    /* .displayflx2 {
       display: flex;
       width: 545px;
       height: 150px;
@@ -270,25 +278,24 @@ const Third = styled.div`
           }
         }
       }
-    }
+    } */
     @media (max-width: 1024px) {
-      .displayflx2 {
+      .displayflx1 {
         width: 450px;
         height: 150px;
       }
     }
     @media (max-width: 768px) {
-      .displayflx2 {
+      .displayflx1 {
         width: 500px;
         height: 180px;
       }
     }
     @media (max-width: 400px) {
-      .displayflx2 {
+      .displayflx1 {
         padding: 10px 10px;
         width: 300px;
         height: 170px;
-        margin-right: 0;
       }
     }
   }

@@ -106,6 +106,13 @@ const Footer = styled.footer`
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      @media (max-width: 960px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 8% auto;
+        padding: 4%;
+        gap: 6rem;
+      }
       @media (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

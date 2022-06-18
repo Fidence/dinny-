@@ -16,7 +16,7 @@ export default class Fifthcomp extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       initialSlide: 0,
       responsive: [
         {
@@ -96,9 +96,7 @@ export default class Fifthcomp extends Component {
                   <h4>{student.date}</h4>
                   <p>{student.para}</p>
                   <div className="enroll">
-                    <p className="enrolnow">
-                      Enroll Now <BsArrowRight className="arrow" />
-                    </p>
+                    <p className="enrolnow">Enroll Now</p>
                   </div>
                 </div>
               );
@@ -128,10 +126,10 @@ const Fifth = styled.div`
         width: 80%;
         text-align: center;
         flex: 7;
-        margin-top: 65px;
+        margin-top: 25px;
 
         h2 {
-          font-size: 40px;
+          font-size: 2.7rem;
           color: #038c33;
           font-weight: bold;
           line-height: 55.9px;
@@ -139,18 +137,19 @@ const Fifth = styled.div`
             font-size: 2.2rem;
           }
           @media (max-width: 400px) {
-            font-size: 1.8rem;
+            font-size: 2rem;
           }
         }
 
         p {
           color: #1f6036;
+          padding: 1% 0;
           @media (max-width: 400px) {
             font-size: 0.9rem;
-            padding: 0 3%;
+            padding: 0 0.5% 0;
           }
           @media (max-width: 768px) {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
           }
         }
       }
@@ -170,6 +169,22 @@ const Fifth = styled.div`
     margin-bottom: 3%;
     @media (max-width: 400px) {
       margin-bottom: 7%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: green;
+      width: 15px;
+    }
+    .slick-prev {
+      left: 1%;
+      top: 50%;
+
+      z-index: 1;
+    }
+    .slick-next {
+      position: absolute;
+      right: 1%;
+      top: 50%;
     }
 
     .instructors {

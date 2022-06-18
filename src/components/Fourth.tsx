@@ -59,7 +59,7 @@ const Forth = styled.div`
       margin-top: 2%;
       margin-left: 8%;
       h1 {
-        font-size: 2.9rem;
+        font-size: 2.7rem;
         color: #038c33;
         font-weight: 500px;
         line-height: 3.5rem;

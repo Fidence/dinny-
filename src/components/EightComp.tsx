@@ -91,7 +91,7 @@ const Eighth = styled.div`
         color: #038c33;
         padding-top: 2rem;
         padding-bottom: 1.3rem;
-        font-size: 3rem;
+        font-size: 2.7rem;
         @media (max-width: 1024px) {
           font-size: 2rem;
         }
@@ -102,6 +102,7 @@ const Eighth = styled.div`
         }
       }
       p {
+        margin: 1rem 0;
         text-align: center;
         color: #6c757d;
       }
@@ -111,7 +112,7 @@ const Eighth = styled.div`
       display: flex;
       justify-content: center;
       margin-top: 3%;
-      padding: 5% 2%;
+      /* padding: 5% 2%; */
       @media (max-width: 768px) {
         padding: 0 2%;
       }
@@ -300,13 +301,18 @@ const Eighth = styled.div`
       border-radius: 5px;
       cursor: pointer;
       font-size: 0.9rem;
-      @media (max-width: 400px) {
-        margin-top: 7%;
-      }
 
       &:hover {
         background-color: green;
         cursor: pointer;
+      }
+      @media (max-width: 768px) {
+        margin-top: 7%;
+        padding: 3% 10%;
+      }
+      @media (max-width: 400px) {
+        margin-top: 7%;
+        padding: 3% 10%;
       }
     }
   }

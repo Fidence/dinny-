@@ -54,10 +54,10 @@ const Seventh = styled.div`
     background-repeat: no-repeat;
     opacity: 0.95;
     position: relative;
-    @media (width: 768px) {
+    @media (max-width: 768px) {
       height: 350px;
     }
-    @media (width: 400px) {
+    @media (max-width: 400px) {
       height: 350px;
     }
 
@@ -75,11 +75,15 @@ const Seventh = styled.div`
         padding-top: 3%;
         font-size: 2.5rem;
         font-weight: 700;
-        @media (width: 400px) {
+        @media (max-width: 400px) {
           padding-top: 5%;
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
-        @media (width: 768px) {
+        @media (max-width: 960px) {
+          padding-top: 3%;
+          font-size: 2.3rem;
+        }
+        @media (max-width: 768px) {
           padding-top: 3%;
         }
       }
@@ -90,6 +94,12 @@ const Seventh = styled.div`
       justify-content: center;
       padding-top: 1%;
       display: flex;
+      @media (max-width: 960px) {
+        margin-top: 3%;
+      }
+      @media (max-width: 400px) {
+        margin-top: 5%;
+      }
 
       .story1 {
         margin-top: 3%;
@@ -121,7 +131,7 @@ const Seventh = styled.div`
     p {
       text-align: center;
       color: #003412;
-      padding-top: 1%;
+      padding: 2%;
     }
   }
 `;

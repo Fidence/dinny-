@@ -50,21 +50,24 @@ const Sixth = styled.div`
         font-size: 40px;
         color: #038c33;
         padding: 2%;
-        @media (width: 1024px) {
+        line-height: 1.2;
+        margin-bottom: 0.4rem;
+        @media (max-width: 1024px) {
           font-size: 1.5rem;
         }
-        @media (width: 768px) {
+        @media (max-width: 768px) {
           font-size: 2rem;
         }
-        @media (width: 400px) {
-          font-size: 0.5rem;
+        @media (max-width: 400px) {
+          font-size: 2rem;
         }
       }
     }
     p {
       color: #1f6036;
-      @media (width: 768px) {
-        font-size: 1.15rem;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        padding: 0 0.4rem;
       }
     }
 
@@ -80,13 +83,13 @@ const Sixth = styled.div`
       background-repeat: no-repeat;
 
       position: relative;
-      @media (width: 768px) {
-        max-width: 100%;
+      @media (max-width: 768px) {
+        width: 70%;
         height: 20rem;
       }
-      @media (width: 400px) {
-        /* max-width: 100%; */
-        height: 3rem;
+      @media (max-width: 400px) {
+        height: 15rem;
+        width: 80%;
         background-color: red;
       }
 
@@ -104,21 +107,13 @@ const Sixth = styled.div`
         left: 40%;
         display: block;
         margin: auto auto;
-        @media (width: 768px) {
-          width: 6rem;
-          height: 6rem;
+        @media (max-width: 768px) {
+          width: 5rem;
+          height: 5rem;
         }
-        @media (width: 400px) {
-          display: none;
-        }
-      }
-    }
-    @media (width: 1024px) {
-      .help_bg {
-        width: 50%;
-        height: 20rem;
-        @media (width: 400px) {
-          display: none;
+        @media (max-width: 400px) {
+          width: 5rem;
+          height: 5rem;
         }
       }
     }
@@ -130,9 +125,9 @@ const Sixth = styled.div`
       bottom: 85%;
       right: -3%;
       z-index: -1;
-      @media (width: 768px) {
-        bottom: 0%;
-        right: -3%;
+
+      @media (max-width: 768px) {
+        display: none;
       }
       @media (width: 400px) {
         display: none;
