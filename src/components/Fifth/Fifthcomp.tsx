@@ -14,7 +14,7 @@ export default class Fifthcomp extends Component {
     var settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 450,
       slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 0,
