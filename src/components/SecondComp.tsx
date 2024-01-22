@@ -11,13 +11,15 @@ const SecondComp = () => {
         </div>
 
         <div className=" advance-system">
-          <h1>Advance Learning System Around The World</h1>
+          
+            <h1>Advance Learning System Around The World</h1>
 
           <p>
             We have made a collaborative effort in bringing together scientific
             expertise from other countries, steered jointly by their governments
             on the basis of shared, policy-driven interests.
           </p>
+         
 
           <table>
             <tr>
@@ -47,7 +49,7 @@ const SecondComp = () => {
           <button>Learn More</button>
         </div>
         <div className="yyy">
-          <img src={Mask} alt="" />
+          <img src={Mask} alt=""  />
         </div>
       </div>
     </Wrapper>
@@ -58,96 +60,43 @@ export default SecondComp;
 
 const Wrapper = styled.div`
   .advances {
-    display: flex;
-    padding: 5% 3%;
-    align-items: center;
-    justify-content: space-between;
+  margin:2rem 0;
+    display: grid;
+   grid-template-columns:repeat(3, 1fr);
+    
+    gap:1rem;
     background-color: #ffffff;
     position: relative;
-
-    @media (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      padding: 2.5rem;
-    }
+     /* flex: 1; */
+    
 
     .adavance-learning {
-      margin-left: 3%;
-      .dinny7 {
-        width: 115%;
+     
+      .dinny7{
+     
+       width:400px;
+     
       }
+      @media (max-width: 800px) {
+           display:none;
+       }
     }
-    @media (max-width: 1024px) {
-      .adavance-learning {
-        margin-left: 5%;
-        margin-bottom: 5%;
-
-        .dinny7 {
-          width: 150%;
-        }
-      }
-    }
-    @media (max-width: 768px) {
-      .adavance-learning {
-        margin-left: 5%;
-        .dinny7 {
-          width: 90%;
-        }
-      }
-    }
-    @media (max-width: 400px) {
-      .adavance-learning {
-        margin-left: 5%;
-        display: none;
-        .dinny7 {
-          width: 90%;
-        }
-      }
-    }
+   
 
     .advance-system {
-      margin-left: 12%;
-      @media (max-width: 1024px) {
-        margin-left: 20%;
-      }
-      @media (max-width: 768px) {
-        margin-left: 10%;
-      }
-      @media (max-width: 400px) {
-        margin-left: 6%;
-      }
+    
+   
 
       h1 {
-        line-height: 3rem;
-        font-weight: bold;
-        font-size: 2.2rem;
-        color: #038c33;
-        width: 60%;
-        @media (max-width: 1024px) {
-          font-size: 2.1rem;
-          line-height: 2.4rem;
-          width: 90%;
-        }
-        @media (max-width: 400px) {
-          font-size: 1.9rem;
-          line-height: 2.4rem;
-          width: 90%;
-        }
+        line-height:1.2; 
+        color: #038c33;  
       }
 
       p {
         padding: 3% 0;
         color: #1f6036;
-        width: 65%;
       }
-      @media (max-width: 1024px) {
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
-      @media (max-width: 768x) {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-      }
+     
 
       button {
         margin-top: 40px;
@@ -168,6 +117,8 @@ const Wrapper = styled.div`
 
       table {
         margin-top: 20px;
+    
+   
         p {
           text-align: center;
           padding: 0;
@@ -176,12 +127,12 @@ const Wrapper = styled.div`
 
         tr {
           td {
-            padding: 0 10px 0 10px;
+            padding: 0 8px 0 8px;
             border-right: 2px solid #ddd;
           }
-          .up {
+          /* .up {
             padding: 0 10px 22px 5px;
-          }
+          } */
         }
 
         .down {
@@ -192,19 +143,16 @@ const Wrapper = styled.div`
     }
 
     .yyy {
+      flex:1;
       position: absolute;
       top: 40%;
-      left: 90%;
-    }
-    @media (max-width: 1024px) {
-      .yyy {
-        display: none;
+      left: 85%;
+      @media (max-width: 1024px) {
+        
+          display: none;
+        
       }
     }
   }
-  @media (max-width: 1024px) {
-    .advances {
-      padding: 2rem;
-    }
-  }
+ 
 `;

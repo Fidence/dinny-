@@ -50,6 +50,7 @@ export default Fourth;
 
 const Forth = styled.div`
   .find {
+    
     display: flex;
     padding: 0 0 10% 0;
     margin-top: 7%;
@@ -57,41 +58,22 @@ const Forth = styled.div`
 
     &_more {
       margin-top: 2%;
-      margin-left: 8%;
+      margin-left: 2.5rem;
       h1 {
-        font-size: 2.7rem;
+       
         color: #038c33;
         font-weight: 500px;
-        line-height: 3.5rem;
-        width: 90%;
+        line-height:1.2;
+       
 
-        @media (max-width: 1024px) {
-          font-size: 2.1rem;
-          line-height: 3rem;
-        }
-        @media (max-width: 400px) {
-          font-size: 2rem;
-          line-height: 2.5rem;
-        }
       }
 
       p {
         padding-top: 3%;
         padding-bottom: 4%;
         color: #1f6036;
-        width: 80%;
-        @media (max-width: 768px) {
-          width: 100%;
-          font-size: 1.1rem;
-        }
-        @media (max-width: 768px) {
-          width: 100%;
-          font-size: 1.1rem;
-        }
-        @media (max-width: 400px) {
-          width: 100%;
-          font-size: 1rem;
-        }
+       
+        
       }
 
       ul li {
@@ -100,13 +82,7 @@ const Forth = styled.div`
         list-style: none;
         color: #6c757d;
         overflow: hidden;
-        @media (max-width: 768px) {
-          font-size: 1.1rem;
-        }
-        @media (max-width: 400px) {
-          width: 100%;
-          font-size: 1rem;
-        }
+       
 
         .check {
           background-color: #038c33;
@@ -115,9 +91,7 @@ const Forth = styled.div`
           padding: 0.5%;
           margin-right: 1%;
         }
-        @media (max-width: 400px) {
-          font-size: 0.9rem;
-        }
+        
       }
 
       button {
@@ -143,12 +117,7 @@ const Forth = styled.div`
         height: 98.8%;
         opacity: 0.5;
         border-bottom-left-radius: 40px;
-        @media (max-width: 768px) {
-          display: none;
-        }
-        @media (max-width: 1024px) {
-          height: 98.4%;
-        }
+      
       }
 
       .img {

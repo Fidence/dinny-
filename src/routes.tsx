@@ -24,6 +24,15 @@ const RouterComp = () => {
 export default RouterComp;
 
 const Wrapper = styled.div`
+
+@media (max-width: 500px) {
+         h1{
+          font-size:24px;
+         }
+         p{
+          font-size:14px;
+         }
+       }
   min-height: 100vh;
 
   display: flex;

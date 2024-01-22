@@ -13,8 +13,8 @@ const FooterComp = () => {
           <div className="foot1">
             <img src={Logo} width="120.64px" height="99.64px" alt="" />
             <p>
-              Replenish him third creature and meat <br /> blessed void a fruit
-              gathered you’re, <br /> they’re two waters own morning <br />{" "}
+              Replenish him third creature and meat  blessed void a fruit
+              gathered you’re,  they’re two waters own morning 
               gathered greater.
             </p>
           </div>
@@ -95,64 +95,35 @@ export default FooterComp;
 
 const Footer = styled.footer`
   .footerr {
+    margin-top:3rem;
     width: 100%;
-    /* height: 31.3rem; */
     background-color: #003412;
-
+      padding:2rem 0;
     .foot {
-      width: 80%;
-
-      margin-top: 8%;
-      display: flex;
+      padding:1rem;
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns:repeat(4,1fr);
+      gap: 1rem;
       align-items: center;
-      justify-content: space-evenly;
-      @media (max-width: 960px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 8% auto;
-        padding: 4%;
-        gap: 6rem;
-      }
-      @media (max-width: 768px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 8% auto;
-        padding: 4%;
-        gap: 6rem;
-      }
-      @media (max-width: 400px) {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 8% auto;
-        padding: 4%;
-        gap: 3rem;
-      }
-
+     
       p,
       li {
         padding: 6% 0;
         font-size: 0.9rem;
         color: #f2f2f2;
-        @media (max-width: 768px) {
-          font-size: 1.06rem;
-        }
+       
       }
       h4 {
         color: #f2f2f2;
         padding-bottom: 1.6rem;
-        @media (max-width: 768px) {
-          font-size: 1.2rem;
-        }
-        @media (max-width: 400px) {
-          padding-bottom: 1rem;
-        }
+       
       }
       .foot1 {
+  width: 15rem;
         padding-top: 6%;
-        @media (max-width: 400px) {
-          padding-top: 2%;
-        }
-
+       
         li {
           gap: 1.7rem;
           font-size: 0.9rem;
@@ -161,10 +132,8 @@ const Footer = styled.footer`
 
       .foot2 {
         margin-top: 7%;
-        @media (max-width: 400px) {
-          padding-top: 2%;
-        }
-
+        
+        margin-left:2rem;
         .line {
           padding-bottom: 0.6rem;
           border-bottom: 2px solid #add9bd;
@@ -173,9 +142,7 @@ const Footer = styled.footer`
         li {
           padding-bottom: 0.6rem;
           list-style: none;
-          @media (max-width: 400px) {
-            padding-bottom: 0.1%;
-          }
+          
         }
 
         .news {
@@ -197,15 +164,8 @@ const Footer = styled.footer`
           }
           .mouse {
             font-size: 19px;
-            padding: 1.5% 4%;
             color: #ffffff;
             background-color: #038c33;
-            @media (max-width: 768px) {
-              padding: 1% 5%;
-            }
-            @media (max-width: 400px) {
-              padding: 4% 3%;
-            }
           }
         }
 
@@ -215,6 +175,18 @@ const Footer = styled.footer`
           border: none;
         }
       }
+       @media (max-width: 1024px) {
+           grid-template-columns:repeat(3,1fr);
+           .foot2{
+            margin-left:0;
+           }
+       }
+       @media (max-width: 660px) {
+           grid-template-columns:repeat(2,1fr);
+       }
+       @media (max-width: 580px) {
+           grid-template-columns:repeat(1,1fr);
+       }
     }
 
     .align {
@@ -224,19 +196,12 @@ const Footer = styled.footer`
       text-align: center;
       font-size: 0.8rem;
       align-self: end;
-      @media (max-width: 400px) {
-        font-size: 0.9rem;
-      }
+     
     }
     .socials {
       padding-top: 15%;
       display: flex;
-      @media (max-width: 768px) {
-        margin-top: 6%;
-      }
-      @media (max-width: 400px) {
-        margin-top: 2%;
-      }
+     
       .space {
         margin-left: 6%;
         margin-right: 6%;
@@ -245,20 +210,10 @@ const Footer = styled.footer`
 
     .underline {
       border-bottom: 1px solid #777777;
-      width: 79rem;
+      width: 100%;
       margin: 0 auto;
       margin-top: 8%;
-      @media (max-width: 1024px) {
-        width: 50rem;
-      }
-      @media (max-width: 768px) {
-        width: 40rem;
-      }
-      @media (max-width: 400px) {
-        font-size: 1.05rem;
-        width: 22rem;
-        margin-top: 2%;
-      }
+
     }
   }
 `;

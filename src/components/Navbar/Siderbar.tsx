@@ -34,7 +34,15 @@ const Siderbar = () => {
             </a>
             <Link to="*">Blog</Link>
             <Link to="*">Contact</Link>
-            <div></div>
+           
+           
+                  <Link to="" className="bton">Log in</Link>
+             
+                
+                  <Link to="" className="bton">Register</Link>
+             
+            
+             
           </div>
         )}
       </nav>
@@ -53,17 +61,15 @@ const Sidebar = styled.div`
     font-size: 2rem;
     color: white;
     display: none;
-    @media (max-width: 1025px) {
+    @media (max-width: 850px) {
       display: block;
     }
   }
   .sidebar {
     display: none;
 
-    @media (max-width: 1020px) {
+    @media (max-width: 850px) {
       display: block;
-      /* background-color: red; */
-      right: 0;
     }
     .sidelinks {
       position: absolute;
@@ -85,8 +91,9 @@ const Sidebar = styled.div`
       }
 
       a {
+        display:inline-block;
         color: #ffffff;
-        margin-top: 7%;
+        margin-top: 3%;
         margin-left: 15%;
         font-size: 1.3rem;
         text-decoration: none;
@@ -94,7 +101,19 @@ const Sidebar = styled.div`
         &:hover {
           color: #038c33;
         }
+        .bton{
+          background-color: #add9bd;
+      color: #038c33;
+      padding: 0.8rem 2.5rem;
+      border: none;
+      border-radius: 5px;
+        }
       }
+
+
+
+      
+
     }
   }
 `;

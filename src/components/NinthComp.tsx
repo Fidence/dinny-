@@ -41,29 +41,21 @@ export default NinthComp;
 
 const Ninth = styled.div`
   .contact {
-    margin-top: 3%;
+    margin-top: 3rem;
     justify-content: center;
-    /* width: 100%; */
     background-color: #ffffff;
-    @media (width: 768px) {
-      margin-top: 5%;
-    }
+
     h1 {
       text-align: center;
       color: #038c33;
-      font-size: 2.7rem;
-      font-weight: bold;
-      padding-bottom: 5%;
-      margin: 10% 0;
-      @media (max-width: 400px) {
-        font-size: 2.4rem;
-      }
+      margin-bottom:1.5rem;
     }
     &_form {
-      /* width: 67%; */
+      width: 100%;
       text-align: center;
 
       form {
+        width: 100%;
         .inputs {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -71,9 +63,8 @@ const Ninth = styled.div`
           width: 90%;
           margin: 0 auto;
           input {
-            margin: 1%;
-            padding: 1% 2%;
-
+        width: 100%;
+            padding: 1% 3%;
             height: 48px;
             border: 1.4px solid #c4c4c4;
             border-radius: 3px;
@@ -97,12 +88,7 @@ const Ninth = styled.div`
           padding: 1% 3%;
           border: none;
           border-radius: 5px;
-          @media (max-width: 768px) {
-            padding: 2% 6%;
-          }
-          @media (max-width: 400px) {
-            padding: 3% 7%;
-          }
+          
         }
       }
     }

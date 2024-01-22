@@ -103,7 +103,6 @@ export default HeaderComp;
 const Header = styled.header`
   .container {
     width: 100%;
-
     .wapper {
       color: #038c33;
       width: 100%;
@@ -137,13 +136,10 @@ const Header = styled.header`
             display: flex;
             padding: 3% 0;
             list-style: none;
-            @media (max-width: 400px) {
-              padding: 2% 0;
-            }
+
 
             li {
               margin-right: 5rem;
-
               .darkg {
                 color: #003412;
                 font-weight: 500;
@@ -158,13 +154,12 @@ const Header = styled.header`
         }
 
         .butt {
-          display: inline-block;
+          display: inline;
           padding: 0 0.5rem;
           margin-left: 1rem;
           border: none;
-          @media (max-width: 400px) {
-            display: none;
-          }
+         
+       
 
           .button {
             border: none;
@@ -184,7 +179,7 @@ const Header = styled.header`
           }
 
           &_drakg {
-            display: inline-block;
+            display: inline;
             border: none;
             background-color: #038c33;
 
@@ -203,6 +198,12 @@ const Header = styled.header`
         }
       }
     }
+     @media (max-width: 590px) {
+    
+        display: none;
+        margin-left: 4rem;
+    
+    }
   }
 
   .navbar {
@@ -219,18 +220,14 @@ const Header = styled.header`
     &_container2 {
       display: flex;
       align-items: center;
-      margin: 0 auto;
-      padding-top: 0.5rem;
-
-      .logo {
-        margin-left: 1.3rem;
-      }
+      justify-content:space-between;
+      /* height: 100%; */
+      padding: 1rem;
 
       .links {
-        margin-left: 5rem;
-
+  
         a {
-          margin-left: 5rem;
+          margin-left: 2rem;
           color: #ffffff;
           text-decoration: none;
           font-weight: 500;
@@ -254,25 +251,18 @@ const Header = styled.header`
         }
       }
     }
-    @media (max-width: 1025px) {
+    @media (max-width: 850px) {
       .links {
         display: none;
         margin-left: 4rem;
       }
     }
-    @media (max-width: 768px) {
-      .links {
-        display: none;
-        margin-left: 4rem;
-      }
-    }
-    @media (max-width: 400px) {
-    }
+    
   }
 
   .showcase {
     width: 100%;
-    height: 35.5rem;
+    height:75vh;
     background-image: url(${Thiseng});
     background-position: right;
     background-size: cover;
@@ -280,33 +270,24 @@ const Header = styled.header`
     z-index: -1;
 
     &_text {
-      padding-top: 7.5rem;
-      padding-left: 10rem;
-      @media (max-width: 400px) {
-        padding-top: 8rem;
-        padding-left: 2rem;
-      }
-
+     display: flex;
+     flex-direction:column;
+      justify-content:center;
+      gap: 1rem;
+      height: 100%;
+      padding:1rem 3rem;
       h1 {
         font-family: "lato";
-        font-weight: bold;
-        font-style: normal;
-        line-height: 4.2rem;
-        font-size: 3rem;
+        line-height: 1.2;
         color: #038c33;
-        @media (max-width: 400px) {
-          font-size: 2.5rem;
-          line-height: 3rem;
-        }
+
       }
 
       p {
         padding: 0.6rem 0;
         color: #1f6036;
-        line-height: 1.5rem;
-        @media (max-width: 768px) {
-          font-size: 1.1rem;
-        }
+
+       
 
         a {
           text-decoration: none;
@@ -316,14 +297,13 @@ const Header = styled.header`
     }
 
     .btn {
-      display: inline-block;
-      margin-right: 1.3rem;
+      margin-right: 1rem;
       background-color: #038c33;
       color: #ffffff;
       padding: 0.8rem 2.5rem;
       border: none;
       border-radius: 5px;
-      margin-top: 1.9rem;
+   
 
       &:hover {
         cursor: pointer;
@@ -339,7 +319,7 @@ const Header = styled.header`
       padding: 0.8rem 2.5rem;
       border: none;
       border-radius: 5px;
-      margin-top: 1.9rem;
+    
 
       &:hover {
         cursor: pointer;
@@ -353,7 +333,7 @@ const Header = styled.header`
     width: 100%;
     height: 4.8rem;
     left: 0px;
-    top: 39.1rem;
+    top: 47rem;
     background-color: rgba(0, 52, 18, 0.35);
     backdrop-filter: blur(30px);
   }

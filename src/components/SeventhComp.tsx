@@ -9,7 +9,8 @@ const SeventhComp = () => {
   return (
     <Seventh>
       <div className="stories">
-        <div className="blureme"></div>
+        <div className="blureme">
+
         <div className="stories_txt">
           <h1>Success Stroies</h1>
         </div>
@@ -27,7 +28,6 @@ const SeventhComp = () => {
             <img src={James} className="sucess3" alt="" />
           </div>
         </div>
-
         <p>
           <em>
             We have built hospitals, arranged doctor appointments have the
@@ -37,6 +37,8 @@ const SeventhComp = () => {
             treat ipsu r aol{" "}
           </em>
         </p>
+        </div>
+
       </div>
     </Seventh>
   );
@@ -46,46 +48,26 @@ export default SeventhComp;
 
 const Seventh = styled.div`
   .stories {
-    margin-top: 100px;
-    height: 413px;
+    margin-top:3rem;
     background-image: url(${FarmBoy});
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.95;
-    position: relative;
-    @media (max-width: 768px) {
-      height: 350px;
-    }
-    @media (max-width: 400px) {
-      height: 350px;
-    }
-
+  
     .blureme {
-      position: absolute;
+      padding:2rem 1rem;
       width: 100%;
-      height: 100%;
       background: rgba(5, 150, 13, 0.3);
     }
 
-    &_txt {
+    .stories_txt {
       text-align: center;
       h1 {
         color: #f2f2f2;
-        padding-top: 3%;
-        font-size: 2.5rem;
         font-weight: 700;
-        @media (max-width: 400px) {
-          padding-top: 5%;
-          font-size: 1.5rem;
-        }
-        @media (max-width: 960px) {
-          padding-top: 3%;
-          font-size: 2.3rem;
-        }
-        @media (max-width: 768px) {
-          padding-top: 3%;
-        }
+        margin-bottom:1rem;
+        
       }
     }
 
@@ -94,12 +76,11 @@ const Seventh = styled.div`
       justify-content: center;
       padding-top: 1%;
       display: flex;
-      @media (max-width: 960px) {
-        margin-top: 3%;
-      }
-      @media (max-width: 400px) {
-        margin-top: 5%;
-      }
+       @media (max-width: 360px) {
+        display:none;
+
+       }
+      
 
       .story1 {
         margin-top: 3%;
@@ -114,6 +95,7 @@ const Seventh = styled.div`
           border-radius: 50%;
           border: 2px dotted #f2f2f2;
           opacity: 0.9;
+          z-index:1;
         }
       }
 

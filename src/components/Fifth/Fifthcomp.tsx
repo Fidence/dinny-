@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import { AiTwotoneCalendar } from "react-icons/ai";
 import { FaStickyNote } from "react-icons/fa";
-import { BsArrowRight } from "react-icons/bs";
 import { students } from "./students";
 import Group35 from "../images/Group 35.png";
 import "slick-carousel/slick/slick.css";
@@ -51,7 +50,7 @@ export default class Fifthcomp extends Component {
           },
         },
         {
-          breakpoint: 400,
+          breakpoint: 680,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 2,
@@ -62,9 +61,11 @@ export default class Fifthcomp extends Component {
 
     return (
       <Fifth>
+        <div className="popular">
+
         <div className="popular_classes">
           <div className="pop_txt">
-            <h2>Popular Classes</h2>
+            <h1>Popular Classes</h1>
             <p>
               We have built hospitals, arranged doctor appointments have the
               diagnose and treat <br /> yourem ipsu r aol ad meniam, quis
@@ -82,7 +83,7 @@ export default class Fifthcomp extends Component {
             {students.map((student, id) => {
               return (
                 <div className="instructors">
-                  <img src={student.img} alt="Instructor1" />
+                  <img src={student.img}width="100" alt="Instructor1" />
                   <div className="date">
                     <div className="date_txt">
                       <FaStickyNote className="icon" />
@@ -106,6 +107,7 @@ export default class Fifthcomp extends Component {
         <div className="enroll_btn">
           <button className="view_btn">View More</button>
         </div>
+        </div>
       </Fifth>
     );
   }
@@ -114,62 +116,47 @@ export default class Fifthcomp extends Component {
 const Fifth = styled.div`
   background-color: #f9fcfe;
   width: 100%;
-  height: 50rem;
+  /* height: 50rem; */
   .popular {
+    padding:1rem 0;
     background-color: #f9fcfe;
-
     &_classes {
       display: flex;
       justify-content: flex-end;
-
+       position: relative;
       .pop_txt {
         width: 80%;
         text-align: center;
         flex: 7;
-        margin-top: 25px;
 
-        h2 {
-          font-size: 2.7rem;
+        h1 {
+        
           color: #038c33;
           font-weight: bold;
-          line-height: 55.9px;
-          @media (max-width: 1024px) {
-            font-size: 2.2rem;
-          }
-          @media (max-width: 400px) {
-            font-size: 2rem;
-          }
+          line-height: 1.2;
+         
         }
 
         p {
           color: #1f6036;
           padding: 1% 0;
-          @media (max-width: 400px) {
-            font-size: 0.9rem;
-            padding: 0 0.5% 0;
-          }
-          @media (max-width: 768px) {
-            font-size: 1.1rem;
-          }
+          
         }
       }
 
       .pop_img {
-        margin-right: 4rem;
-        margin-top: 40px;
-        @media (max-width: 400px) {
-          display: none;
-        }
+      position:fixed;
+       /* top: 70%; */
+       /* z-index:1; */
+        
+       
       }
     }
   }
   .slide {
     max-width: 90%;
-    margin: 0 auto;
-    margin-bottom: 3%;
-    @media (max-width: 400px) {
-      margin-bottom: 7%;
-    }
+    margin: 1rem auto;
+   
     .slick-prev:before,
     .slick-next:before {
       color: green;
@@ -188,10 +175,10 @@ const Fifth = styled.div`
     }
 
     .instructors {
-      margin-top: 4%;
+      margin: 4% 0;
       width: 100%;
       background-color: #ffffff;
-      padding: 2%;
+      padding: 1rem;
       margin-bottom: 5%;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
@@ -236,7 +223,6 @@ const Fifth = styled.div`
       }
 
       .enroll {
-        width: 100%;
 
         .enrolnow {
           padding: 2%;
@@ -259,6 +245,7 @@ const Fifth = styled.div`
     }
   }
   .enroll_btn {
+    margin-top:2.5rem;
     .view_btn {
       display: block;
       margin: 0 auto;

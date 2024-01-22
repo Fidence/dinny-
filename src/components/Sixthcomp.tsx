@@ -26,7 +26,7 @@ const Sixthcomp = () => {
             <img src={Mask5} alt="" />
           </div>
 
-          <img src={Group62} className="image" alt="" />
+          {/* <img src={Group62} className="image" alt="" /> */}
         </div>
       </div>
     </Sixth>
@@ -37,61 +37,41 @@ export default Sixthcomp;
 
 const Sixth = styled.div`
   .help {
-    margin-top: 2%;
-    @media (width: 768px) {
-      padding: 3% 0;
-    }
-    @media (width: 450px) {
-      padding: 3% 0;
-    }
+    margin-top: 3rem;
+    
     .help_txt {
       text-align: center;
       h1 {
-        font-size: 40px;
         color: #038c33;
         padding: 2%;
         line-height: 1.2;
-        margin-bottom: 0.4rem;
-        @media (max-width: 1024px) {
-          font-size: 1.5rem;
-        }
-        @media (max-width: 768px) {
-          font-size: 2rem;
-        }
-        @media (max-width: 400px) {
-          font-size: 2rem;
-        }
+      
+       
       }
     }
     p {
       color: #1f6036;
-      @media (max-width: 768px) {
-        font-size: 1rem;
-        padding: 0 0.4rem;
-      }
+     
     }
 
     .help_bg {
-      margin-top: 6%;
-      margin-left: auto;
-      margin-right: auto;
-      width: 60%;
-      height: 30rem;
+    margin:0 auto;
+    margin-top:2rem;
+      width: 50%;
+      height: 20rem;
       background-image: url(${Dinnygren});
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-
       position: relative;
-      @media (max-width: 768px) {
+       @media (max-width: 768px) { 
         width: 70%;
-        height: 20rem;
-      }
-      @media (max-width: 400px) {
         height: 15rem;
-        width: 80%;
-        background-color: red;
       }
+       @media (max-width: 350px) {
+        display: none;
+      }
+     
 
       .blurr {
         width: 100%;
@@ -99,23 +79,6 @@ const Sixth = styled.div`
         background: rgba(18, 152, 18, 0.35);
       }
 
-      .image {
-        width: 9rem;
-        height: 9rem;
-        position: absolute;
-        top: 34%;
-        left: 40%;
-        display: block;
-        margin: auto auto;
-        @media (max-width: 768px) {
-          width: 5rem;
-          height: 5rem;
-        }
-        @media (max-width: 400px) {
-          width: 5rem;
-          height: 5rem;
-        }
-      }
     }
 
     .top {
@@ -126,12 +89,10 @@ const Sixth = styled.div`
       right: -3%;
       z-index: -1;
 
-      @media (max-width: 768px) {
+       @media (max-width: 500px) {
         display: none;
       }
-      @media (width: 400px) {
-        display: none;
-      }
+      
     }
 
     .side {
@@ -141,7 +102,7 @@ const Sixth = styled.div`
       top: 25%;
       left: -13%;
       z-index: -1;
-      @media (width: 400px) {
+      @media (max-width: 500px) {
         display: none;
       }
     }
